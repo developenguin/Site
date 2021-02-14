@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*
+ * basic implementation of a responsive grid system
+ * This one has three breakpoints at 768, 992 and 1280px
+ * Columns are easily added via the name .col-<breakpoint>-<percentage> convention
+ * inside their respective breakpoints
+ */
+
+.row {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+[class^="col-"] {
+  display: block;
+  padding: 15px;
+}
+
+.col-auto {
+  width: auto;
+  max-width: 100%;
+}
+
+.col-25 {
+  width: 25%;
+  max-width: 25%
+}
+
+.col-33 {
+  width: 33%;
+  max-width: 33%;
+}
+
+.col-50 {
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-75 {
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-100 {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Tablets, portrait */
+@media screen and (min-width: 768px) {
+
+  .col-sm-25 {
+    width: 25%!important;
+    max-width: 25%!important;
+  }
+
+  .col-sm-33 {
+    width: 33%!important;
+    max-width: 33%!important;
+  }
+
+  .col-sm-50 {
+    width: 50%!important;
+    max-width: 50%!important;
+  }
+
+  .col-sm-75 {
+    width: 75%!important;
+    max-width: 75%!important;
+  }
+
+  .col-sm-100 {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+
+}
+
+/* Tablets, landscape */
+@media screen and (min-width: 992px) {
+
+  .col-md-25 {
+    width: 25%!important;
+    max-width: 25%!important;
+  }
+
+  .col-md-33 {
+    width: 33%!important;
+    max-width: 33%!important;
+  }
+
+  .col-md-50 {
+    width: 50%!important;
+    max-width: 50%!important;
+  }
+
+  .col-md-75 {
+    width: 75%!important;
+    max-width: 75%!important;
+  }
+
+  .col-md-100 {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1280px) {
+
+  .col-lg-25 {
+    width: 25%!important;
+    max-width: 25%!important;
+  }
+
+  .col-lg-33 {
+    width: 33%!important;
+    max-width: 33%!important;
+  }
+
+  .col-lg-50 {
+    width: 50%!important;
+    max-width: 50%!important;
+  }
+
+  .col-lg-75 {
+    width: 75%!important;
+    max-width: 75%!important;
+  }
+
+  .col-lg-100 {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+
+}

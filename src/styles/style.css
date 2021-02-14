@@ -1,0 +1,169 @@
+:root {
+  --color-primary: #0b486b;
+  --color-gray-light: #f5f5f5;
+  --color-gray-medium: #cccccc;
+  --color-gray-dark: #3c3c3c;
+
+  --logo-size: 100px;
+  --border-radius: 8px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-dark);
+}
+
+html {
+  background: #f7f7f7;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  height: calc(0.5 * var(--logo-size));
+  background: url('../images/ice_bg.jpg');
+  background-size: cover;
+  border-bottom: 2px solid var(--color-gray-medium);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  padding-top: calc(2 * var(--logo-size));
+  margin-bottom: 3rem;
+}
+
+.content-container {
+  box-shadow: 0 2px 2px var(--color-gray-medium);
+}
+
+.header__outer-hexagon {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+  background: var(--color-gray-medium);
+  margin-top: calc(-0.5 * var(--logo-size));
+}
+
+.header__logo {
+  height: 100%;
+  clip-path: polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%);
+}
+
+main {
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.main__subtitle {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.main__about p {
+  max-width: 768px;
+}
+
+.image__linkedin, .image__github, .image__user, .image__code {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  fill: var(--color-primary);
+}
+
+.object__link {
+  pointer-events: none;
+}
+
+/* Projects page */
+
+.project-card__card-title {
+  background: var(--color-primary);
+  color: white;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.project-card__project-image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  display: flex;
+}
+
+.project-card__card-content {
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.project-card__card-content:hover {
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.project-card__project-description {
+  padding: 16px;
+  text-align: justify;
+  margin-bottom: 32px;
+}
+
+.project-card__project-links {
+  display: flex;
+  flex-grow: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.project-card__project-links a {
+  padding: 8px;
+  text-align: center;
+  color: var(--color-gray-dark);
+  width: 50%;
+  border-top: 2px solid var(--color-gray-medium);
+  text-decoration: none;
+}
+
+.project-card__project-links a:first-child {
+  border-right: 2px solid var(--color-gray-medium);
+}
+
+.project-card__project-links a:hover {
+  background: var(--color-primary);
+  color: #fff!important;
+  transition: ease-in 0.1s;
+}
+
+.project-card__project-links a:visited {
+  text-decoration: none;
+  color: var(--color-gray-dark);
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid var(--color-gray-medium);
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.footer__license {
+  font-size: 0.6rem;
+}
+
+.footer__license a {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
