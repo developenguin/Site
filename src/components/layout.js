@@ -31,9 +31,21 @@ const Layout = ({ children }) => {
           marginTop: `2rem`,
         }}
       >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <div className="row">
+          <div className="col-auto w-100 d-flex justify-content-center">&copy; Matthijs Rijken, {new Date().getFullYear()}
+            | All Rights Reserved
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-auto p-0 w-100 d-flex justify-content-center footer__license">Some icons
+            on this site made by <a href="https://www.flaticon.com/authors/simpleicon"
+                       title="SimpleIcon"> SimpleIcon</a> and <a
+              href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave
+              Gandy</a> from <a href="https://www.flaticon.com/"
+                                title="Flaticon">www.flaticon.com</a> are licensed by <a
+              href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+              target="_blank">CC 3.0 BY</a></div>
+        </div>
       </footer>
     </>
   )

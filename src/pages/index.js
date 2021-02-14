@@ -40,11 +40,11 @@ const IndexPage = () => (
           LinkedIn
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
-          <a href="./projects.html">
+          <Link to="/projects/">
             <object className="image__code object__link" data="../images/code.svg"
                     type="image/svg+xml" />
-          </a>
-          Projects
+                    Projects
+          </Link>
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
           <a href="https://github.com/developenguin" target="_blank">
