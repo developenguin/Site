@@ -85,6 +85,13 @@ main {
   pointer-events: none;
 }
 
+.text__link {
+  color: var(--color-gray-dark);
+  display: block;
+  text-align: center;
+  text-decoration: transparent;
+}
+
 /* Projects page */
 
 .project-card__card-title {

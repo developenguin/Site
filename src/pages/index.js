@@ -4,6 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import LinkedinSVGIcon from '../images/linkedin.svg';
+import ProjectsSVGIcon from '../images/code.svg';
+import AboutMeSVGIcon from '../images/user.svg';
+import GithubSVGIcon from '../images/github.svg';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -34,31 +39,27 @@ const IndexPage = () => (
       <div className="row justify-content-space-around">
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
           <a href="https://linkedin.com/in/mrijken" target="_blank">
-            <object className="image__linkedin object__link" data="../images/linkedin.svg"
-                    type="image/svg+xml" />
+            <LinkedinSVGIcon className="image__linkedin object__link" alt="LinkedIn" />
           </a>
-          LinkedIn
+          <span className="text__link">LinkedIn</span>
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
           <Link to="/projects/">
-            <object className="image__code object__link" data="../images/code.svg"
-                    type="image/svg+xml" />
-                    Projects
+            <ProjectsSVGIcon className="image__code object__link" alt="Projects" />
+            <span className="text__link">Projects</span>
           </Link>
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
           <a href="https://github.com/developenguin" target="_blank">
-            <object className="image__github object__link" data="../images/github.svg"
-                    type="image/svg+xml" />
+            <GithubSVGIcon className="image__github object__link" alt="GitHub" />
           </a>
-          GitHub
+          <span className="text__link">GitHub</span>
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
           <a href="./resume">
-            <object className="image__user object__link" data="../images/user.svg"
-                    type="image/svg+xml" />
+            <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
           </a>
-          About (CV)
+          <span className="text__link">About (CV)</span>
         </div>
       </div>
     </div>
