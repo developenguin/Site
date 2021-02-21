@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
+import { Link } from 'gatsby';
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import ProjectsSVGIcon from '../images/code.svg';
+import GithubSVGIcon from '../images/github.svg';
 
 import LinkedinSVGIcon from '../images/linkedin.svg';
-import ProjectsSVGIcon from '../images/code.svg';
 import AboutMeSVGIcon from '../images/user.svg';
-import GithubSVGIcon from '../images/github.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -63,7 +63,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
   </Layout>
 )
 
