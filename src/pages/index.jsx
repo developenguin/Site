@@ -38,7 +38,7 @@ const IndexPage = () => (
 
       <div className="row justify-content-space-around">
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
-          <a href="https://linkedin.com/in/mrijken" target="_blank">
+          <a href="https://linkedin.com/in/mrijken" target="_blank" rel="noreferrer">
             <LinkedinSVGIcon className="image__linkedin object__link" alt="LinkedIn" />
           </a>
           <span className="text__link">LinkedIn</span>
@@ -50,7 +50,7 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
-          <a href="https://github.com/developenguin" target="_blank">
+          <a href="https://github.com/developenguin" target="_blank" rel="noreferrer">
             <GithubSVGIcon className="image__github object__link" alt="GitHub" />
           </a>
           <span className="text__link">GitHub</span>

@@ -40,6 +40,10 @@ header {
   margin-bottom: 3rem;
 }
 
+a, a:link {
+  text-decoration: none;
+}
+
 .content-container {
   box-shadow: 0 2px 2px var(--color-gray-medium);
 }

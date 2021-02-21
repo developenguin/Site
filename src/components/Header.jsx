@@ -6,7 +6,9 @@ import LogoImage from './LogoImage';
 const Header = ({ siteTitle }) => (
   <header className="d-flex justify-content-center">
     <div className="header__outer-hexagon">
-      <LogoImage path="logo.png" alt="Developenguin logo" className="hexagon header__logo" />
+      <Link to="/">
+        <LogoImage path="logo.png" alt="Developenguin logo" className="hexagon header__logo" />
+      </Link>
     </div>
   </header>
 )
