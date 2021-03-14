@@ -4,7 +4,7 @@
   --color-gray-medium: #ccc;
   --color-gray-dark: #3c3c3c;
 
-  --logo-size: 100px;
+  --logo-size: 150px;
   --border-radius: 8px;
 }
 
@@ -22,7 +22,7 @@ html, body {
 }
 
 html {
-  background: #f7f7f7;
+  background: #fff;
 }
 
 body {

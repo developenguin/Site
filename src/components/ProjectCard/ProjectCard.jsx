@@ -12,14 +12,14 @@ const ProjectCard = props => {
         <img
           src={img}
           className="project-card__project-image"
-          alt="image"
+          alt={`${title} image`}
         />
         <div className="project-card__project-description">
           {description}
         </div>
         <div className="project-card__project-links">
-          {codeLink && <a href={codeLink} target="_blank" referrerPolicy="no-referrer">Code</a>}
-          {viewLink && <a href={viewLink} target="_blank" referrerPolicy="no-referrer">View</a>}
+          {codeLink && <a href={codeLink} target="_blank" rel="no-referrer">Code</a>}
+          {viewLink && <a href={viewLink} target="_blank" rel="no-referrer">View</a>}
         </div>
       </div>
     </div>
