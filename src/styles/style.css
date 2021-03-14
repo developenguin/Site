@@ -1,7 +1,7 @@
 :root {
   --color-primary: #0b486b;
   --color-gray-light: #f5f5f5;
-  --color-gray-medium: #cccccc;
+  --color-gray-medium: #ccc;
   --color-gray-dark: #3c3c3c;
 
   --logo-size: 100px;
@@ -160,20 +160,4 @@ main {
 .project-card__project-links a:visited {
   text-decoration: none;
   color: var(--color-gray-dark);
-}
-
-footer {
-  margin-top: 3rem;
-  border-top: 2px solid var(--color-gray-medium);
-  width: 100%;
-  padding-bottom: 0.5rem;
-}
-
-.footer__license {
-  font-size: 0.6rem;
-}
-
-.footer__license a {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }

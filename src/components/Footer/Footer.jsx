@@ -1,19 +1,19 @@
 import React from 'react';
+import * as styles from './Footer.module.scss';
 
 const Footer = () => {
+
+  const footerLicenseClassName = `col-auto p-0 w-100 d-flex justify-content-center ${styles.footerLicense}`;
+
   return (
-    <footer
-      style={{
-        marginTop: `2rem`,
-      }}
-    >
+    <footer className={styles.footer}>
       <div className="row">
         <div className="col-auto w-100 d-flex justify-content-center">
           &copy; Matthijs Rijken, {new Date().getFullYear()} | All Rights Reserved
         </div>
       </div>
       <div className="row">
-        <div className="col-auto p-0 w-100 d-flex justify-content-center footer__license">
+        <div className={footerLicenseClassName}>
           Some icons on this site made by
           <a href="https://www.flaticon.com/authors/simpleicon"
              title="SimpleIcon"
