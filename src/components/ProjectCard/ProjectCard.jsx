@@ -13,14 +13,14 @@ const ProjectCard = props => {
         <img
           src={img}
           className={styles.projectImage}
-          alt={`${title} image`}
+          alt={title}
         />
         <div className={styles.projectDescription}>
           {description}
         </div>
         <div className={styles.projectLinks}>
-          {codeLink && <a href={codeLink} target="_blank" rel="no-referrer">Code</a>}
-          {viewLink && <a href={viewLink} target="_blank" rel="no-referrer">View</a>}
+          {codeLink && <a href={codeLink} target="_blank" rel="noreferrer noopener">Code</a>}
+          {viewLink && <a href={viewLink} target="_blank" rel="noreferrer noopener">View</a>}
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ ProjectCard.propTypes = {
   description: PropTypes.string,
   codeLink: PropTypes.string,
   viewLink: PropTypes.string,
-  img: PropTypes.object
+  img: PropTypes.oneOfType([ PropTypes.string, PropTypes.object ])
 };
 
 export default ProjectCard;
