@@ -1,0 +1,81 @@
+.header {
+  height: calc(0.5 * var(--logo-size));
+  background: url('../../images/ice_bg.jpg');
+  background-size: cover;
+  border-bottom: 2px solid var(--color-gray-medium);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  padding-top: calc(2 * var(--logo-size));
+  margin-bottom: 3rem;
+}
+
+.header-outer-hexagon {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+  background: var(--color-gray-medium);
+  margin-top: calc(-0.5 * var(--logo-size));
+  margin-left: calc(50% - (0.5 * var(--logo-size)));
+}
+
+.header-logo {
+  height: 100%;
+  clip-path: polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%);
+}
+
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideOutUp {
+  0% {
+    padding-top: calc(2 * var(--logo-size));
+  }
+  100% {
+    padding-top: calc(0.5 * var(--logo-size));
+  }
+}
+
+@keyframes slideOutUp {
+  0% {
+    padding-top: calc(2 * var(--logo-size));
+  }
+  100% {
+    padding-top: calc(0.5 * var(--logo-size));
+  }
+}
+
+.slideLogoLeft {
+  -webkit-animation-name: slideLogoLeft;
+  animation-name: slideLogoLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@media screen and (min-width: 768px ){
+  @-webkit-keyframes slideLogoLeft {
+    0% {
+      margin-left: calc(50% - (0.5 * var(--logo-size)));
+    }
+    100% {
+      margin-left: 10%;
+    }
+  }
+
+  @keyframes slideLogoLeft {
+    0% {
+      margin-left: calc(50% - (0.5 * var(--logo-size)));
+    }
+    100% {
+      margin-left: 10%;
+    }
+  }
+}

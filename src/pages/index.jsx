@@ -9,7 +9,7 @@ import GithubSVGIcon from '../images/github.svg';
 import LinkedinSVGIcon from '../images/linkedin.svg';
 import AboutMeSVGIcon from '../images/user.svg';
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div className="row">
@@ -55,10 +55,10 @@ const IndexPage = () => (
         <span className="text__link">GitHub</span>
       </div>
       <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
-        <a href="./resume">
+        <Link to="/resume/">
           <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
-        </a>
-        <span className="text__link">About (CV)</span>
+          <span className="text__link">About (CV)</span>
+        </Link>
       </div>
     </div>
   </Layout>

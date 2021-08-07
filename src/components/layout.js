@@ -12,7 +12,7 @@ import Footer from './Footer';
 
 import Header from "./Header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, shouldAnimateHeader }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
+      <Header shouldAnimate={shouldAnimateHeader} />
       <main className="pt-1 px-1">{children}</main>
       <Footer />
     </>

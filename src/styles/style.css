@@ -29,36 +29,12 @@ body {
   margin: 0 auto;
 }
 
-header {
-  height: calc(0.5 * var(--logo-size));
-  background: url('../images/ice_bg.jpg');
-  background-size: cover;
-  border-bottom: 2px solid var(--color-gray-medium);
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-  padding-top: calc(2 * var(--logo-size));
-  margin-bottom: 3rem;
-}
-
 a, a:link {
   text-decoration: none;
 }
 
 .content-container {
   box-shadow: 0 2px 2px var(--color-gray-medium);
-}
-
-.header__outer-hexagon {
-  height: var(--logo-size);
-  width: var(--logo-size);
-  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
-  background: var(--color-gray-medium);
-  margin-top: calc(-0.5 * var(--logo-size));
-}
-
-.header__logo {
-  height: 100%;
-  clip-path: polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%);
 }
 
 main {

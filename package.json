@@ -6,6 +6,7 @@
   "author": "@Developenguin",
   "dependencies": {
     "@fontsource/roboto": "^4.2.2",
+    "classnames": "^2.3.1",
     "gatsby": "^3.0.4",
     "gatsby-plugin-image": "^1.0.1",
     "gatsby-plugin-manifest": "^3.0.0",
