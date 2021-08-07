@@ -24,8 +24,8 @@ module.exports = {
         name: `matthijs-rijken-home`,
         short_name: `developenguin`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0b486b`,
+        theme_color: `#0b486b`,
         display: `minimal-ui`,
         icon: `src/images/penguin_square.png`, // This path is relative to the root of the site.
       },
