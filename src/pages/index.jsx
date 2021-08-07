@@ -9,6 +9,8 @@ import GithubSVGIcon from '../images/github.svg';
 import LinkedinSVGIcon from '../images/linkedin.svg';
 import AboutMeSVGIcon from '../images/user.svg';
 
+import ImageLinkContainer from '../components/ImageLinkContainer/';
+
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
@@ -36,30 +38,31 @@ const IndexPage = (props) => (
     </div>
 
     <div className="row justify-content-space-around">
-      <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
+      <ImageLinkContainer>
         <a href="https://linkedin.com/in/mrijken" target="_blank" rel="noreferrer">
           <LinkedinSVGIcon className="image__linkedin object__link" alt="LinkedIn" />
         </a>
         <span className="text__link">LinkedIn</span>
-      </div>
-      <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
+      </ImageLinkContainer>
+      <ImageLinkContainer>
         <Link to="/projects/">
           <ProjectsSVGIcon className="image__code object__link" alt="Projects" />
           <span className="text__link">Projects</span>
         </Link>
-      </div>
-      <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
+      </ImageLinkContainer>
+      <ImageLinkContainer>
         <a href="https://github.com/developenguin" target="_blank" rel="noreferrer">
           <GithubSVGIcon className="image__github object__link" alt="GitHub" />
         </a>
         <span className="text__link">GitHub</span>
-      </div>
-      <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
+      </ImageLinkContainer>
+      <ImageLinkContainer>
         <Link to="/resume/">
           <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
           <span className="text__link">About (CV)</span>
         </Link>
-      </div>
+      </ImageLinkContainer>
+
     </div>
   </Layout>
 )
