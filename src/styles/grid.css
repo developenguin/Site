@@ -1,21 +1,21 @@
 @charset "utf-8";
 /*
  * basic implementation of a responsive grid system
- * This one has three breakpoints at 768, 992 and 1280px
+ * This one has three breakpoints at 768, 1024 and 1440px
  * Columns are easily added via the name .col-<breakpoint>-<percentage> convention
  * inside their respective breakpoints
  */
 
 .row {
   display: flex;
-  width: 100%;
-  max-width: 100%;
   flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 [class^="col-"] {
   display: block;
-  padding: 16px;
+  padding: 8px;
 }
 
 .col-auto {
@@ -79,7 +79,7 @@
 }
 
 /* Tablets, landscape */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
 
   .col-md-25 {
     width: 25%!important;
@@ -109,7 +109,7 @@
 }
 
 /* Desktops, large screens */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
 
   .col-lg-25 {
     width: 25%!important;

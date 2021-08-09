@@ -41,11 +41,6 @@ main {
   margin: 0 auto;
 }
 
-.main__title {
-  font-size: 3rem;
-  font-weight: 300;
-}
-
 .main__subtitle {
   font-size: 1.5rem;
   font-weight: 100;

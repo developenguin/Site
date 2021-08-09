@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../components/Heading';
 import Layout from '../components/layout';
 import ProjectCard from '../components/ProjectCard';
 import SEO from '../components/seo';
@@ -13,8 +14,8 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects" />
       <div className="row">
-        <div className="col w-100 d-flex justify-content-center main__title">
-          Projects
+        <div className="col w-100 d-flex justify-content-center">
+          <Heading variant="h1">Projects</Heading>
         </div>
       </div>
 

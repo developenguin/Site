@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 const Hexagon = props => {
 
-  const { backgroundColor, borderColor } = props;
+  const { backgroundColor, borderColor, size } = props;
 
   const wrapperStyles = {
-    height: '100%',
+    height: `${size}px`,
+    width: `${size}px`,
     position: 'relative'
   };
 
@@ -44,7 +45,8 @@ const Hexagon = props => {
 
 Hexagon.propTypes = {
   backgroundColor: PropTypes.string,
-  borderColor: PropTypes.string
+  borderColor: PropTypes.string,
+  size: PropTypes.number.isRequired
 };
 
 export default Hexagon;

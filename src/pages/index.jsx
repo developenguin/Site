@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import Heading from '../components/Heading';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -17,8 +18,8 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div className="row">
-      <div className="col w-100 d-flex justify-content-center main__title">
-        Matthijs Rijken
+      <div className="col w-100 d-flex justify-content-center">
+        <Heading variant="h1">Matthijs Rijken</Heading>
       </div>
     </div>
     <div className="row mb-3">

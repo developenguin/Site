@@ -1,22 +1,56 @@
 import React from 'react';
+import Heading from '../components/Heading';
 import Hexagon from '../components/Hexagon';
 import Layout from '../components/layout';
+import ExperienceItem from '../components/Resume/ExperienceItem';
 import SEO from '../components/seo';
+import resumeData from '../assets/resumeData';
+import useScreenSize from '../hooks/useScreenSize';
+import * as styles from './resume.module.css';
 
-const ResumePage = () => (
-  <Layout shouldAnimateHeader={true}>
-    <SEO title="resume" />
-    <div className="row">
-      <div className="col w-100 d-flex justify-content-center main__title">
-        About Me
+const ResumePage = () => {
+
+  const { isXS } = useScreenSize();
+
+  const leftBarStyle = isXS
+    ? {
+      display: 'none'
+    }
+    : {
+      width: 'calc(10% + (0.5 * var(--logo-size)))',
+      borderRight: '2px solid #ccc'
+    };
+
+  return (
+    <Layout shouldAnimateHeader={true}>
+      <SEO title="resume"/>
+      <div className="row">
+        <div className="col d-flex" style={leftBarStyle} />
+        <div className={`col ${styles.content}`}>
+          <div className="row">
+            <div className="col w-100 d-flex justify-content-center">
+              <Heading variant="h1">
+                About Me
+              </Heading>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col w-100">
+              <Hexagon borderColor="#0b486b" backgroundColor="#ffffff" size={100}/>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col w-100">
+              <Heading variant="h2">Ervaring</Heading>
+              {resumeData.experience.map(item => (
+                <ExperienceItem {...item} key={`exp_${item.place}`}/>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="row">
-      <div className="col w-100">
-        <Hexagon borderColor="#0b486b" backgroundColor="#ffffff" />
-      </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  )
+};
 
 export default ResumePage;
