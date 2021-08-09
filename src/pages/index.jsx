@@ -9,6 +9,8 @@ import GithubSVGIcon from '../images/github.svg';
 import LinkedinSVGIcon from '../images/linkedin.svg';
 import AboutMeSVGIcon from '../images/user.svg';
 
+import * as styles from './index.module.css';
+
 import ImageLinkContainer from '../components/ImageLinkContainer/';
 
 const IndexPage = (props) => (
@@ -28,10 +30,8 @@ const IndexPage = (props) => (
     <div className="row mb-3">
       <div className="col w-100 d-flex justify-content-center main__about">
         <p>
-          Welcome! I see you found my corner of the internet. I'm a frontend developer currently
-          working at
-          a company called Medicore. I'm also a runner, metalhead, Discworld reader and fan of
-          penguins.
+          Welcome! I see you found my corner of the internet. I'm a frontend developer, which
+          pretty much means I build stuff for and on the Web.
           To find out more about me, click the buttons below.
         </p>
       </div>
@@ -42,24 +42,24 @@ const IndexPage = (props) => (
         <a href="https://linkedin.com/in/mrijken" target="_blank" rel="noreferrer">
           <LinkedinSVGIcon className="image__linkedin object__link" alt="LinkedIn" />
         </a>
-        <span className="text__link">LinkedIn</span>
+        <span className={styles.textLink}>LinkedIn</span>
       </ImageLinkContainer>
       <ImageLinkContainer>
         <Link to="/projects/">
           <ProjectsSVGIcon className="image__code object__link" alt="Projects" />
-          <span className="text__link">Projects</span>
+          <span className={styles.textLink}>Projects</span>
         </Link>
       </ImageLinkContainer>
       <ImageLinkContainer>
         <a href="https://github.com/developenguin" target="_blank" rel="noreferrer">
           <GithubSVGIcon className="image__github object__link" alt="GitHub" />
         </a>
-        <span className="text__link">GitHub</span>
+        <span className={styles.textLink}>GitHub</span>
       </ImageLinkContainer>
       <ImageLinkContainer>
         <Link to="/resume/">
           <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
-          <span className="text__link">About (CV)</span>
+          <span className={styles.textLink}>About (CV)</span>
         </Link>
       </ImageLinkContainer>
 

@@ -1,0 +1,6 @@
+.text-link {
+  color: var(--color-gray-dark);
+  display: block;
+  text-align: center;
+  text-decoration: transparent;
+}
