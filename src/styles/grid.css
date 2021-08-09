@@ -24,27 +24,27 @@
 }
 
 .col-25 {
-  width: 25%;
+  flex: 0 0 25%;
   max-width: 25%
 }
 
 .col-33 {
-  width: 33%;
+  flex: 0 0 33%;
   max-width: 33%;
 }
 
 .col-50 {
-  width: 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
 .col-75 {
-  width: 75%;
+  flex: 0 0 75%;
   max-width: 75%;
 }
 
 .col-100 {
-  width: 100%;
+  flex: 0 0 100%;
   max-width: 100%;
 }
 
@@ -52,27 +52,27 @@
 @media screen and (min-width: 768px) {
 
   .col-sm-25 {
-    width: 25%!important;
+    flex: 0 0 25%;
     max-width: 25%!important;
   }
 
   .col-sm-33 {
-    width: 33%!important;
+    flex: 0 0 33%;
     max-width: 33%!important;
   }
 
   .col-sm-50 {
-    width: 50%!important;
+    flex: 0 0 50%;
     max-width: 50%!important;
   }
 
   .col-sm-75 {
-    width: 75%!important;
+    flex: 0 0 75%;
     max-width: 75%!important;
   }
 
   .col-sm-100 {
-    width: 100%!important;
+    flex: 0 0 100%;
     max-width: 100%!important;
   }
 
@@ -82,27 +82,27 @@
 @media screen and (min-width: 1024px) {
 
   .col-md-25 {
-    width: 25%!important;
+    flex: 0 0 25%;
     max-width: 25%!important;
   }
 
   .col-md-33 {
-    width: 33%!important;
+    flex: 0 0 33%;
     max-width: 33%!important;
   }
 
   .col-md-50 {
-    width: 50%!important;
+    flex: 0 0 50%;
     max-width: 50%!important;
   }
 
   .col-md-75 {
-    width: 75%!important;
+    flex: 0 0 75%;
     max-width: 75%!important;
   }
 
   .col-md-100 {
-    width: 100%!important;
+    flex: 0 0 100%;
     max-width: 100%!important;
   }
 
@@ -112,27 +112,27 @@
 @media screen and (min-width: 1440px) {
 
   .col-lg-25 {
-    width: 25%!important;
+    flex: 0 0 25%;
     max-width: 25%!important;
   }
 
   .col-lg-33 {
-    width: 33%!important;
+    flex: 0 0 33%;
     max-width: 33%!important;
   }
 
   .col-lg-50 {
-    width: 50%!important;
+    flex: 0 0 50%;
     max-width: 50%!important;
   }
 
   .col-lg-75 {
-    width: 75%!important;
+    flex: 0 0 75%;
     max-width: 75%!important;
   }
 
   .col-lg-100 {
-    width: 100%!important;
+    flex: 0 0 100%;
     max-width: 100%!important;
   }
 
