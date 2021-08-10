@@ -4,6 +4,7 @@ import React from "react"
 import LogoImage from '../LogoImage';
 import * as styles from './header.module.css';
 import classNames from 'classnames';
+import Hexagon from "../Hexagon";
 
 const Header = ({ siteTitle, shouldAnimate }) => {
 
@@ -17,13 +18,13 @@ const Header = ({ siteTitle, shouldAnimate }) => {
     [styles.slideLogoLeft]: shouldAnimate
   });
 
-  const logoClasses = classNames('hexagon', [styles.headerLogo]);
-
   return (
     <header className={classes}>
       <div className={logoContainerClasses}>
         <Link to="/">
-          <LogoImage path="logo.png" alt="Developenguin logo" className={logoClasses} />
+          <Hexagon size={150} borderColor="#cccccc">
+            <LogoImage className={styles.headerLogo} />
+          </Hexagon>
         </Link>
       </div>
     </header>

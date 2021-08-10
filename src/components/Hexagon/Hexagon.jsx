@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Hexagon = props => {
 
-  const { backgroundColor, borderColor, size } = props;
+  const { backgroundColor, borderColor, children, size } = props;
 
   const wrapperStyles = {
     height: `${size}px`,
@@ -24,7 +24,7 @@ const Hexagon = props => {
   }
 
   const innerStyles = {
-    clipPath: 'polygon(50% 4%, 90% 27%, 90% 73%, 50% 95%, 10% 73%, 10% 27%)',
+    clipPath: 'polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%)',
     height: '100%',
     width: '100%',
     position: 'absolute',
@@ -38,7 +38,9 @@ const Hexagon = props => {
   return (
     <div style={wrapperStyles}>
       <div style={outerStyles} />
-      <div style={innerStyles} />
+      <div style={innerStyles}>
+        {children}
+      </div>
     </div>
   );
 };
@@ -46,6 +48,7 @@ const Hexagon = props => {
 Hexagon.propTypes = {
   backgroundColor: PropTypes.string,
   borderColor: PropTypes.string,
+  children: PropTypes.element,
   size: PropTypes.number.isRequired
 };
 

@@ -39,7 +39,12 @@ const LogoImage = ({ className, alt }) => {
 }
 
 LogoImage.propTypes = {
-  path: PropTypes.string.isRequired
+  className: PropTypes.string,
+  alt: PropTypes.string
 }
+
+LogoImage.defaultProps = {
+  alt: 'Developenguin logo'
+};
 
 export default LogoImage

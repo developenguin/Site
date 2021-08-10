@@ -12,17 +12,15 @@
 .header-outer-hexagon {
   height: var(--logo-size);
   width: var(--logo-size);
-  clip-path: polygon(50% 0%, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
-  background: var(--color-gray-medium);
   margin-top: calc(-0.5 * var(--logo-size));
   margin-left: calc(50% - (0.5 * var(--logo-size)));
+  padding-left: 8px;
 }
 
 .header-logo {
   height: 100%;
-  clip-path: polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%);
+  width: 100%;
 }
-
 
 .slideOutUp {
   -webkit-animation-name: slideOutUp;

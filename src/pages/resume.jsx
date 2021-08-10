@@ -1,6 +1,5 @@
 import React from 'react';
 import Heading from '../components/Heading';
-import Hexagon from '../components/Hexagon';
 import Layout from '../components/layout';
 import ExperienceItem from '../components/Resume/ExperienceItem';
 import SEO from '../components/seo';
