@@ -18,6 +18,11 @@
   padding: 8px;
 }
 
+.col {
+  display: block;
+  padding: 8px;
+}
+
 .col-auto {
   width: auto;
   max-width: 100%;

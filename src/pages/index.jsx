@@ -18,18 +18,18 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div className="row">
-      <div className="col w-100 d-flex justify-content-center">
+      <div className="col-100 d-flex justify-content-center">
         <Heading variant="h1">Matthijs Rijken</Heading>
       </div>
     </div>
     <div className="row mb-3">
-      <div className="col w-100 d-flex justify-content-center main__subtitle">
+      <div className="col-100 d-flex justify-content-center main__subtitle">
         Frontend Developer
       </div>
     </div>
 
     <div className="row mb-3">
-      <div className="col w-100 d-flex justify-content-center main__about">
+      <div className="col-100 d-flex justify-content-center main__about">
         <p>
           Welcome! I see you found my corner of the internet. I'm a frontend developer, which
           pretty much means I build stuff for and on the Web.

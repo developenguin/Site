@@ -3,16 +3,16 @@ import * as styles from './Footer.module.scss';
 
 const Footer = () => {
 
-  const footerLicenseClassName = `col-auto p-0 w-100 d-flex justify-content-center ${styles.footerLicense}`;
+  const footerLicenseClassName = `col-100 d-flex justify-content-center ${styles.footerLicense}`;
 
   return (
     <footer className={styles.footer}>
-      <div className="row">
-        <div className="col-auto w-100 d-flex justify-content-center">
+      <div className="row w-100">
+        <div className="col-100 d-flex justify-content-center">
           &copy; Matthijs Rijken, {new Date().getFullYear()} | All Rights Reserved
         </div>
       </div>
-      <div className="row">
+      <div className="row w-100">
         <div className={footerLicenseClassName}>
           Some icons on this site made by
           <a href="https://www.flaticon.com/authors/simpleicon"

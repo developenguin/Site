@@ -14,13 +14,13 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects" />
       <div className="row">
-        <div className="col w-100 d-flex justify-content-center">
+        <div className="col-100 d-flex justify-content-center">
           <Heading variant="h1">Projects</Heading>
         </div>
       </div>
 
       <div className="row mb-3">
-        <div className="col w-100 d-flex justify-content-center main__about">
+        <div className="col-100 d-flex justify-content-center main__about">
           <p>
             This is a collection of things I'm working on or have worked on, mostly to try out
             things or just for fun.

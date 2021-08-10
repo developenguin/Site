@@ -1,5 +1,5 @@
 import debounce from 'lodash/debounce';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useScreenSize = () => {
 
