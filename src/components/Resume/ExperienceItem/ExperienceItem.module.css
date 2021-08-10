@@ -1,0 +1,19 @@
+.hexagon {
+  margin-left: calc(-37.5px - 2px - 8px);
+}
+
+.item-heading {
+  margin-left: 8px;
+}
+
+.offset-half-hexagon-left {
+  margin-left: 37.5px;
+}
+
+.item-wrapper {
+  margin-bottom: 16px;
+}
+
+.content-row {
+  margin-top: -24px;
+}

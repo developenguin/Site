@@ -16,7 +16,7 @@ const ResumePage = () => {
       display: 'none'
     }
     : {
-      width: 'calc(10% + (0.5 * var(--logo-size)))',
+      width: 'calc(10% + 2px + (0.5 * var(--logo-size)))',
       borderRight: '2px solid #ccc'
     };
 

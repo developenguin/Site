@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Hexagon = props => {
 
-  const { backgroundColor, borderColor, children, size } = props;
+  const { backgroundColor, borderColor, children, className, size } = props;
 
   const wrapperStyles = {
     height: `${size}px`,
@@ -36,7 +36,7 @@ const Hexagon = props => {
   }
 
   return (
-    <div style={wrapperStyles}>
+    <div style={wrapperStyles} className={className}>
       <div style={outerStyles} />
       <div style={innerStyles}>
         {children}

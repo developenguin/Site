@@ -4,6 +4,20 @@
 }
 
 .h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
