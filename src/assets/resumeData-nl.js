@@ -14,7 +14,7 @@ export default {
     place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
     endDate: null,
-    description: 'Als frontend developer houd ik me bezig met de ontwikkeling van de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
+    description: 'Als frontend developer werk ik aan de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
     extra: [{
       title: 'Ondernemingsraad Medicore/Tenzinger',
       startDate: '01-07-2017',

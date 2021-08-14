@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Heading from '../components/Heading';
 import Hexagon from '../components/Hexagon';
 import Layout from '../components/layout';
 import ExperienceItem from '../components/Resume/ExperienceItem';
 import HexagonList from '../components/Resume/HexagonList';
 import SEO from '../components/seo';
-import resumeData from '../assets/resumeData';
+import resumeDataNL from '../assets/resumeData-nl';
+import resumeDataEN from '../assets/resumeData-en';
 import useScreenSize from '../hooks/useScreenSize';
 import * as styles from './resume.module.css';
 import CodeIcon from '@material-ui/icons/Code';
@@ -15,6 +16,7 @@ import PersonIcon from '@material-ui/icons/Person';
 const ResumePage = () => {
 
   const { isXS } = useScreenSize();
+  const [ language, setLanguage ] = useState('nl');
 
   const leftBarStyle = isXS
     ? {
@@ -24,6 +26,8 @@ const ResumePage = () => {
       width: 'calc(10% + 2px + (0.5 * var(--logo-size)))',
       borderRight: '2px solid #ccc'
     };
+
+  const resumeData = language === 'nl' ? resumeDataNL : resumeDataEN;
 
   return (
     <Layout shouldAnimateHeader={true}>
