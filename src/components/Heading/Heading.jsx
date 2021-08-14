@@ -22,7 +22,14 @@ const Heading = props => {
 };
 
 Heading.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element
+    ]))
+  ]).isRequired,
   className: PropTypes.string,
   variant: PropTypes.oneOf([ 'h1', 'h2', 'h3', 'h4'])
 };

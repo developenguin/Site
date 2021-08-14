@@ -1,12 +1,14 @@
+import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Heading from '../../Heading';
 import Hexagon from '../../Hexagon';
+import ExperienceExtraItem from '../ExperienceExtraItem';
 import * as styles from './ExperienceItem.module.css';
 
 const ExperienceItem = props => {
 
-  const { title, place, startDate, endDate, description } = props;
+  const { title, place, startDate, endDate, description, note, extra } = props;
 
   const renderTitle = () => (
     <div className="row">
@@ -17,10 +19,22 @@ const ExperienceItem = props => {
           borderColor="#cccccc"
           className={styles.hexagon}
         />
-        <Heading variant="h3" className={styles.itemHeading}>{title}</Heading>
+        <Heading variant="h3" className={styles.itemHeading}>
+          {title} {note && (<span className={styles.note}>({note})</span>)}
+        </Heading>
       </div>
     </div>
-  )
+  );
+
+  const extraItemClasses = classNames('mt-1', styles.offsetHalfHexagonLeft)
+
+  const renderExtra = () => (
+    <>
+      {extra.map(props => (
+        <ExperienceExtraItem key={`extra-${props.title}`} {...props} className={extraItemClasses} />
+      ))}
+    </>
+  );
   return (
     <div className={styles.itemWrapper}>
       {renderTitle()}
@@ -31,6 +45,7 @@ const ExperienceItem = props => {
           <div>{description}</div>
         </div>
       </div>
+      {extra && renderExtra()}
     </div>
   );
 };
@@ -41,7 +56,6 @@ ExperienceItem.propTypes = {
   startDate: PropTypes.string.isRequired,
   endDate: PropTypes.string,
   description: PropTypes.string
-
 };
 
 export default ExperienceItem;

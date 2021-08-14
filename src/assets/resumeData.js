@@ -6,28 +6,26 @@ export default {
     jobTitle: 'Frontend Developer',
     summary: '',
     city: 'Vleuten',
-    dateOfBirth: '1992-09-30',
     linkedinUrl: 'https://linkedin.com/in/mrijken'
   },
 
   experience: [ {
     title: 'Frontend Developer',
-    place: 'Medicore',
+    place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
     endDate: null,
-    description: 'Als frontend developer houd ik me bezig met de ontwikkeling van de Medicore producten. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten.'
+    description: 'Als frontend developer houd ik me bezig met de ontwikkeling van de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
+    extra: [{
+      title: 'Ondernemingsraad Medicore/Tenzinger',
+      startDate: '01-07-2017',
+      endDate: '01-06-2021'
+    }]
   }, {
     title: 'Web consultant',
     place: 'CCS B.V.',
     startDate: '14-11-2014',
     endDate: '31-05-2016',
     description: 'Web consultancy omvatte het implementeren en configureren van Connect, een frontoffice-applicatie die verzekeraars, tussenpersonen en consumenten hun verzekeringen en schades online laat administreren en beheren.'
-  }, {
-    title: 'MSc. Thesis',
-    place: 'ZEEF',
-    startDate: '01-04-2014',
-    endDate: '31-07-2014',
-    description: 'Ik heb mijn Master thesis bij ZEEF geschreven. Mijn onderzoek richtte zich op het combineren van van zoekalgoritmes en content curation, en de toegevoegde waarde hiervan voor eindgebruikers.'
   }, {
     title: 'Studentassistent',
     place: 'Universiteit Utrecht',
@@ -42,7 +40,14 @@ export default {
     startDate: '01-09-2013',
     endDate: '31-07-2014',
     note: 'cum laude',
-    description: 'HCM richt zich op hoe mensen technologie zien en gebruiken, en hoe ze erdoor worden beïnvloed. Focusgebieden zijn onder andere het ontwerpen van interactieve systemen, (visueel) zoeken en kennismanagement'
+    description: 'HCM richt zich op hoe mensen technologie zien en gebruiken, en hoe ze erdoor worden beïnvloed. Focusgebieden zijn onder andere het ontwerpen van interactieve systemen, (visueel) zoeken en kennismanagement',
+    extra: [{
+      title: 'MSc. Thesis',
+      place: 'ZEEF',
+      startDate: '01-04-2014',
+      endDate: '31-07-2014',
+      description: 'Ik heb mijn Master thesis bij ZEEF geschreven. Mijn onderzoek richtte zich op het combineren van van zoekalgoritmes en content curation, en de toegevoegde waarde hiervan voor eindgebruikers.'
+    }]
   }, {
     title: 'BSc. Informatiekunde',
     place: 'Universiteit Utrecht',
@@ -58,9 +63,9 @@ export default {
   } ],
 
   skills: {
-    technical: [ 'Javascript', 'Backbone', 'Marionette', '(S)CSS', 'React' ],
+    technical: [ 'Javascript', 'React', 'Backbone', 'Marionette', '(S)CSS' ],
     languages: [ 'Nederlands', 'Engels' ],
-    work: [ 'Scrum', 'Jira', 'Confluence', 'Bitbucket'],
+    work: [ 'Scrum', 'Kanban' ],
     personal: [ 'Communicatief', 'Gedreven', 'Betrouwbaar' ]
   }
 

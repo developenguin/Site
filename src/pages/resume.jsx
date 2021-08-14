@@ -1,11 +1,16 @@
 import React from 'react';
 import Heading from '../components/Heading';
+import Hexagon from '../components/Hexagon';
 import Layout from '../components/layout';
 import ExperienceItem from '../components/Resume/ExperienceItem';
+import HexagonList from '../components/Resume/HexagonList';
 import SEO from '../components/seo';
 import resumeData from '../assets/resumeData';
 import useScreenSize from '../hooks/useScreenSize';
 import * as styles from './resume.module.css';
+import CodeIcon from '@material-ui/icons/Code';
+import LanguageIcon from '@material-ui/icons/Language';
+import PersonIcon from '@material-ui/icons/Person';
 
 const ResumePage = () => {
 
@@ -39,6 +44,39 @@ const ResumePage = () => {
               {resumeData.experience.map(item => (
                 <ExperienceItem {...item} key={`exp_${item.place}`}/>
               ))}
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-100">
+              <Heading variant="h2">Opleiding</Heading>
+              {resumeData.education.map(item => (
+                <ExperienceItem {...item} key={`edu_${item.place}`}/>
+              ))}
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-100">
+              <Heading variant="h2">Vaardigheden</Heading>
+              <div className="row">
+                <div className="col-100 col-sm-50 col-md-33">
+                  <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
+                    <CodeIcon classes={{ root: styles.hexagonIcon }}/>
+                  </Hexagon>
+                  <HexagonList items={resumeData.skills.technical} className={styles.hexagonList}/>
+                </div>
+                <div className="col-100 col-sm-50 col-md-33">
+                  <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
+                    <LanguageIcon classes={{ root: styles.hexagonIcon }}/>
+                  </Hexagon>
+                  <HexagonList items={resumeData.skills.languages} className={styles.hexagonList}/>
+                </div>
+                <div className="col-100 col-sm-50 col-md-33">
+                  <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
+                    <PersonIcon classes={{ root: styles.hexagonIcon }}/>
+                  </Hexagon>
+                  <HexagonList items={resumeData.skills.personal} className={styles.hexagonList}/>
+                </div>
+              </div>
             </div>
           </div>
         </div>

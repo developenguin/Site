@@ -28,7 +28,10 @@ const Hexagon = props => {
     height: '100%',
     width: '100%',
     position: 'absolute',
-    top: '0.3%'
+    top: '0.3%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
   };
 
   if (backgroundColor) {
