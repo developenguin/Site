@@ -1,4 +1,4 @@
-export default {
+const data = {
 
   personalia: {
     name: 'Matthijs Rijken',
@@ -79,3 +79,5 @@ export default {
 //  endDate: '',
 //  description: ''
 //}
+
+export default data;

@@ -18,6 +18,10 @@
   justify-content: space-around;
 }
 
+.justify-content-end {
+  justify-content: flex-end;
+}
+
 .m-0 {
   margin: 0;
 }
