@@ -10,7 +10,7 @@ import * as styles from './resume.module.css';
 const ResumePage = () => {
 
   const { isXS } = useScreenSize();
-  const [ language, setLanguage ] = useState('en');
+  const [ language, setLanguage ] = useState('nl');
 
   const leftBarStyle = isXS
     ? {
@@ -39,22 +39,22 @@ const ResumePage = () => {
       <div className="row">
         <div className="col d-flex" style={leftBarStyle} />
         <div className={`col-100 ${styles.content}`}>
-          <div className="row">
-            <div className="col-100 d-flex justify-content-end">
-              <button
-                className={enClassNames}
-                onClick={() => onClickChangeLanguage('en')}
-              >
-                EN
-              </button>
-              <button
-                className={nlClassNames}
-                onClick={() => onClickChangeLanguage('nl')}
-              >
-                NL
-              </button>
-            </div>
-          </div>
+          {/*<div className="row">*/}
+          {/*  <div className="col-100 d-flex justify-content-end">*/}
+          {/*    <button*/}
+          {/*      className={enClassNames}*/}
+          {/*      onClick={() => onClickChangeLanguage('en')}*/}
+          {/*    >*/}
+          {/*      EN*/}
+          {/*    </button>*/}
+          {/*    <button*/}
+          {/*      className={nlClassNames}*/}
+          {/*      onClick={() => onClickChangeLanguage('nl')}*/}
+          {/*    >*/}
+          {/*      NL*/}
+          {/*    </button>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           <ResumeContent language={language} />
         </div>
       </div>
