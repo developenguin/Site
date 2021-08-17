@@ -62,8 +62,8 @@ const data = {
     description: 'Ik heb het VWO in vijf jaar afgerond, een optie die mijn school in 2004 voor het eerst aanbood.'
   } ],
 
-  technicalSkills: {
-    languages: {
+  skills: {
+    programmingLanguages: {
       name: 'Programmeertalen',
       items: [{
         name: 'Javascript',
@@ -97,10 +97,20 @@ const data = {
         name: 'Symfony',
         rating: 1
       }]
+    },
+    languages: {
+      name: 'Talen',
+      items: [{
+        name: 'Nederlands',
+        rating: 7
+      }, {
+        name: 'Engels',
+        rating: 6
+      }]
     }
   },
 
-  skills: {
+  skills2: {
     technical: [ 'Javascript', 'React', 'Backbone', 'Marionette', '(S)CSS' ],
     languages: [ 'Nederlands', 'Engels' ],
     work: [ 'Scrum', 'Kanban' ],

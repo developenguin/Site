@@ -1,17 +1,13 @@
 import CodeIcon from '@material-ui/icons/Code';
 import LanguageIcon from '@material-ui/icons/Language';
-import PersonIcon from '@material-ui/icons/Person';
-import React from 'react';
 import PropTypes from 'prop-types';
-import ResumeBlockHeader from '../ResumeBlockHeader/ResumeBlockHeader';
-import SkillList from '../SkillList';
-import * as styles from './ResumeContent.module.css';
-import Heading from '../../Heading';
-import Hexagon from '../../Hexagon';
-import ExperienceItem from '../ExperienceItem';
-import HexagonList from '../HexagonList';
-import resumeDataNL from '../../../assets/resumeData-nl';
+import React from 'react';
 import resumeDataEN from '../../../assets/resumeData-en';
+import resumeDataNL from '../../../assets/resumeData-nl';
+import Heading from '../../Heading';
+import ExperienceItem from '../ExperienceItem';
+import ResumeBlockHeader from '../ResumeBlockHeader/ResumeBlockHeader';
+import SkillBlock from '../SkillBlock';
 
 const ResumeContent = ({ language }) => {
 
@@ -49,23 +45,25 @@ const ResumeContent = ({ language }) => {
           <ResumeBlockHeader>Vaardigheden</ResumeBlockHeader>
           <div className="row">
             <div className="col-100 col-sm-50 col-md-33">
-              <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
-                <CodeIcon classes={{ root: styles.hexagonIcon }}/>
-              </Hexagon>
-              <Heading variant="h3">{resumeData.technicalSkills.languages.name}</Heading>
-              <SkillList skills={resumeData.technicalSkills.languages.items} />
+              <SkillBlock
+                items={resumeData.skills.programmingLanguages.items}
+                name={resumeData.skills.programmingLanguages.name}
+                IconComponent={CodeIcon}
+              />
             </div>
             <div className="col-100 col-sm-50 col-md-33">
-              <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
-                <LanguageIcon classes={{ root: styles.hexagonIcon }}/>
-              </Hexagon>
-              <HexagonList items={resumeData.skills.languages} className={styles.hexagonList}/>
+              <SkillBlock
+                items={resumeData.skills.frameworks.items}
+                name={resumeData.skills.frameworks.name}
+                IconComponent={CodeIcon}
+              />
             </div>
             <div className="col-100 col-sm-50 col-md-33">
-              <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
-                <PersonIcon classes={{ root: styles.hexagonIcon }}/>
-              </Hexagon>
-              <HexagonList items={resumeData.skills.personal} className={styles.hexagonList}/>
+              <SkillBlock
+                items={resumeData.skills.languages.items}
+                name={resumeData.skills.languages.name}
+                IconComponent={LanguageIcon}
+              />
             </div>
           </div>
         </div>

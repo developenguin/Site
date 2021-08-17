@@ -11,20 +11,20 @@ const SkillListItem = props => {
   const otherHexList = new Array(maxRating - rating).fill(true);
 
   const getRatingHexagons = () => ratingHexList.map(
-    () => (<Hexagon size={15} backgroundColor="#0b486b" borderColor="#ffffff" />)
+    (v, idx) => (<Hexagon key={`${name}_r_${idx}`} size={15} backgroundColor="#0b486b" borderColor="#ffffff" />)
   );
 
   const getOtherHexagons = () => otherHexList.map(
-    () => (<Hexagon size={15} backgroundColor="#cccccc" borderColor="#ffffff" />)
+    (v, idx) => (<Hexagon key={`${name}_o_${idx}`} size={15} backgroundColor="#cccccc" borderColor="#ffffff" />)
   )
 
 
   return (
     <div className="row">
-      <div className="col-100 col-lg-50">
+      <div className="col-100 col-sm-50">
         {name}
       </div>
-      <div className="col-100 col-lg-50 d-flex">
+      <div className="col-100 col-sm-50 d-flex">
         {getRatingHexagons()}
         {getOtherHexagons()}
       </div>
