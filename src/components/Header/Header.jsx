@@ -22,7 +22,7 @@ const Header = ({ siteTitle, shouldAnimate }) => {
     <header className={classes}>
       <div className={logoContainerClasses}>
         <Link to="/">
-          <Hexagon size={150} borderColor="#cccccc">
+          <Hexagon size={150} borderColor={shouldAnimate ? '#0b486b' : '#cccccc'}>
             <LogoImage className={styles.headerLogo} />
           </Hexagon>
         </Link>

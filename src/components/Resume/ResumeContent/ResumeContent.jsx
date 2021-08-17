@@ -3,6 +3,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import PersonIcon from '@material-ui/icons/Person';
 import React from 'react';
 import PropTypes from 'prop-types';
+import ResumeBlockHeader from '../ResumeBlockHeader/ResumeBlockHeader';
 import SkillList from '../SkillList';
 import * as styles from './ResumeContent.module.css';
 import Heading from '../../Heading';
@@ -29,7 +30,7 @@ const ResumeContent = ({ language }) => {
       </div>
       <div className="row">
         <div className="col-100">
-          <Heading variant="h2">Ervaring</Heading>
+          <ResumeBlockHeader>Ervaring</ResumeBlockHeader>
           {resumeData.experience.map(item => (
             <ExperienceItem {...item} key={`exp_${item.place}`}/>
           ))}
@@ -37,7 +38,7 @@ const ResumeContent = ({ language }) => {
       </div>
       <div className="row">
         <div className="col-100">
-          <Heading variant="h2">Opleiding</Heading>
+          <ResumeBlockHeader>Opleiding</ResumeBlockHeader>
           {resumeData.education.map(item => (
             <ExperienceItem {...item} key={`edu_${item.place}`}/>
           ))}
@@ -45,7 +46,7 @@ const ResumeContent = ({ language }) => {
       </div>
       <div className="row">
         <div className="col-100">
-          <Heading variant="h2">Vaardigheden</Heading>
+          <ResumeBlockHeader>Vaardigheden</ResumeBlockHeader>
           <div className="row">
             <div className="col-100 col-sm-50 col-md-33">
               <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">

@@ -14,9 +14,9 @@ const ExperienceItem = props => {
     <div className="row">
       <div className="col-100 d-flex align-items-center">
         <Hexagon
-          size={75}
+          size={60}
           backgroundColor="#ffffff"
-          borderColor="#cccccc"
+          borderColor="#0b486b"
           className={styles.hexagon}
         />
         <Heading variant="h3" className={styles.itemHeading}>

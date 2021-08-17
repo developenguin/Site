@@ -18,7 +18,7 @@ const ResumePage = () => {
     }
     : {
       width: 'calc(10% + 2px + (0.5 * var(--logo-size)))',
-      borderRight: '2px solid #ccc'
+      borderRight: '2px solid #0b486b'
     };
 
   const onClickChangeLanguage = language => setLanguage(language);
