@@ -3,6 +3,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import PersonIcon from '@material-ui/icons/Person';
 import React from 'react';
 import PropTypes from 'prop-types';
+import SkillList from '../SkillList';
 import * as styles from './ResumeContent.module.css';
 import Heading from '../../Heading';
 import Hexagon from '../../Hexagon';
@@ -50,7 +51,8 @@ const ResumeContent = ({ language }) => {
               <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
                 <CodeIcon classes={{ root: styles.hexagonIcon }}/>
               </Hexagon>
-              <HexagonList items={resumeData.skills.technical} className={styles.hexagonList}/>
+              <Heading variant="h3">{resumeData.technicalSkills.languages.name}</Heading>
+              <SkillList skills={resumeData.technicalSkills.languages.items} />
             </div>
             <div className="col-100 col-sm-50 col-md-33">
               <Hexagon size={75} backgroundColor="#ffffff" borderColor="#0b486b">
