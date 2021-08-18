@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as styles from './Heading.module.css';
+import * as styles from './Heading.module.scss';
 import classNames from 'classnames';
 
 const Heading = props => {

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Heading from '../../Heading';
 import Hexagon from '../../Hexagon';
-import * as styles from './ResumeBlockHeader.module.css';
+import * as styles from './ResumeBlockHeader.module.scss';
 
 const ResumeBlockHeader = ({ children }) => {
 

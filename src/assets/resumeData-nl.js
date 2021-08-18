@@ -14,18 +14,24 @@ const data = {
     place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
     endDate: null,
-    description: 'Als frontend developer werk ik aan de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
+    description: 'Als frontend developer werk ik aan de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Ook werk ik mee aan de transitie naar een microservice-based ecosysteem, waarbij we gebruik maken van micro-frontends. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
     extra: [{
       title: 'Ondernemingsraad Medicore/Tenzinger',
       startDate: '01-07-2017',
       endDate: '01-06-2021'
     }]
   }, {
+    title: 'Frontend Developer',
+    place: 'Rockstars IT',
+    startDate: '01-06-2016',
+    endDate: '01-06-2017',
+    description: 'Mijn eerste jaar bij Medicore was via Rockstars IT, waar ik een programma heb gevolgd op het gebied van persoonlijke ontwikkeling/zelfmanagement.'
+  }, {
     title: 'Web consultant',
     place: 'CCS B.V.',
     startDate: '14-11-2014',
     endDate: '31-05-2016',
-    description: 'Web consultancy omvatte het implementeren en configureren van Connect, een frontoffice-applicatie die verzekeraars, tussenpersonen en consumenten hun verzekeringen en schades online laat administreren en beheren.'
+    description: 'Web consultancy omvatte het implementeren en configureren van Connect, een frontoffice-applicatie die verzekeraars, tussenpersonen en consumenten hun verzekeringen en schademeldingen online laat beheren. Ook heb ik tooling ontwikkeld om klantspecificaties automatisch te vertalen naar interactieve formulieren in Connect.'
   }, {
     title: 'Studentassistent',
     place: 'Universiteit Utrecht',

@@ -1,10 +1,9 @@
-import CodeIcon from '@material-ui/icons/Code';
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import Heading from '../../Heading';
 import Hexagon from '../../Hexagon';
-import * as styles from './SkillBlock.module.css';
 import SkillList from '../SkillList';
+import * as styles from './SkillBlock.module.scss';
 
 const SkillBlock = ({ name, items, IconComponent }) => {
 

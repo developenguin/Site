@@ -10,7 +10,7 @@ import GithubSVGIcon from '../images/github.svg';
 import LinkedinSVGIcon from '../images/linkedin.svg';
 import AboutMeSVGIcon from '../images/user.svg';
 
-import * as styles from './index.module.css';
+import * as styles from './index.module.scss';
 
 import ImageLinkContainer from '../components/ImageLinkContainer/';
 

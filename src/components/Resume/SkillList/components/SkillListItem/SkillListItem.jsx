@@ -33,7 +33,8 @@ const SkillListItem = props => {
 };
 
 SkillListItem.propTypes = {
-
+  name: PropTypes.string.isRequired,
+  rating: PropTypes.number
 };
 
 export default SkillListItem;

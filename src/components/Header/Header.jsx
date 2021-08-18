@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import LogoImage from '../LogoImage';
-import * as styles from './header.module.css';
+import * as styles from './header.module.scss';
 import classNames from 'classnames';
 import Hexagon from "../Hexagon";
 

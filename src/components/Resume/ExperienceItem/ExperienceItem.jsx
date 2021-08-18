@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Heading from '../../Heading';
 import Hexagon from '../../Hexagon';
 import ExperienceExtraItem from '../ExperienceExtraItem';
-import * as styles from './ExperienceItem.module.css';
+import * as styles from './ExperienceItem.module.scss';
 
 const ExperienceItem = props => {
 

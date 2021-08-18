@@ -24,7 +24,7 @@ const Hexagon = props => {
   }
 
   const innerStyles = {
-    clipPath: 'polygon(50% 2%, 92% 26%, 92% 74%, 50% 98%, 8% 74%, 8% 26%)',
+    clipPath: 'polygon(50% 2%, 92% 26%, 92% 73.5%, 50% 97.5%, 8% 73.5%, 8% 26%)',
     height: '100%',
     width: '100%',
     position: 'absolute',
