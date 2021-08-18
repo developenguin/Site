@@ -94,7 +94,10 @@ const data = {
         name: 'React',
         rating: 4
       }, {
-        name: 'Backbone + Marionette',
+        name: 'Backbone',
+        rating: 5
+      }, {
+        name: 'Marionette',
         rating: 5
       }, {
         name: 'Material UI',

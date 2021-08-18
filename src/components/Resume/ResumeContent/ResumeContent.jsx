@@ -8,6 +8,7 @@ import Heading from '../../Heading';
 import ExperienceItem from '../ExperienceItem';
 import ResumeBlockHeader from '../ResumeBlockHeader/ResumeBlockHeader';
 import SkillBlock from '../SkillBlock';
+import * as styles from './ResumeContent.module.scss';
 
 const ResumeContent = ({ language }) => {
 
@@ -43,22 +44,22 @@ const ResumeContent = ({ language }) => {
       <div className="row">
         <div className="col-100">
           <ResumeBlockHeader>Vaardigheden</ResumeBlockHeader>
-          <div className="row">
-            <div className="col-100 col-sm-50 col-md-33">
+          <div className="row px-1">
+            <div className={`col-100 col-sm-50 col-lg-33 ${styles.skillBlockColumn}`}>
               <SkillBlock
                 items={resumeData.skills.programmingLanguages.items}
                 name={resumeData.skills.programmingLanguages.name}
                 IconComponent={CodeIcon}
               />
             </div>
-            <div className="col-100 col-sm-50 col-md-33">
+            <div className={`col-100 col-sm-50 col-lg-33 ${styles.skillBlockColumn}`}>
               <SkillBlock
                 items={resumeData.skills.frameworks.items}
                 name={resumeData.skills.frameworks.name}
                 IconComponent={CodeIcon}
               />
             </div>
-            <div className="col-100 col-sm-50 col-md-33">
+            <div className={`col-100 col-sm-50 col-lg-33 ${styles.skillBlockColumn}`}>
               <SkillBlock
                 items={resumeData.skills.languages.items}
                 name={resumeData.skills.languages.name}
