@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import Hexagon from '../../../../Hexagon';
 
 const SkillListItem = props => {
@@ -19,13 +19,12 @@ const SkillListItem = props => {
     (v, idx) => (<Hexagon key={`${name}_o_${idx}`} size={hexagonSize} backgroundColor="#cccccc" borderColor="#ffffff" />)
   )
 
-
   return (
     <div className="row">
-      <div className="col-100 col-sm-50 d-flex justify-content-end">
+      <div className="col-50 d-flex justify-content-end">
         {name}
       </div>
-      <div className="col-100 col-sm-50 d-flex">
+      <div className="col-50 d-flex">
         {getRatingHexagons()}
         {getOtherHexagons()}
       </div>

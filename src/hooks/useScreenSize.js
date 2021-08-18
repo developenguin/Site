@@ -3,10 +3,20 @@ import { useEffect, useState } from 'react';
 
 export const useScreenSize = () => {
 
-  const getProperties = () => ({
-    width: document.documentElement.clientWidth,
-    height: document.documentElement.clientHeight
-  });
+  const getProperties = () => {
+
+    if (typeof window !== 'undefined') {
+      return {
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight
+      }
+    } else {
+      return {
+        width: 0,
+        height: 0
+      }
+    }
+  };
 
   const [ state, setState ] = useState(getProperties());
 

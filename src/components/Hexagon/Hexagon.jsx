@@ -23,12 +23,15 @@ const Hexagon = props => {
     outerStyles.backgroundColor = borderColor;
   }
 
+  const largeSizeInnerPolygon = 'polygon(50% 2%, 92% 26%, 92% 73.5%, 50% 97.5%, 8% 73.5%, 8% 26%)';
+  const smallSizeInnerPolygon = 'polygon(50% 4%, 90% 26%, 90% 74%, 50% 96%, 10% 74%, 10% 26%)'
+
   const innerStyles = {
-    clipPath: 'polygon(50% 2%, 92% 26%, 92% 73.5%, 50% 97.5%, 8% 73.5%, 8% 26%)',
+    clipPath: size >= 100 ? largeSizeInnerPolygon : smallSizeInnerPolygon,
     height: '100%',
     width: '100%',
     position: 'absolute',
-    top: '0.3%',
+    top: 0,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'

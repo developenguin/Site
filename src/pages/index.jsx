@@ -1,9 +1,11 @@
-import { Link } from 'gatsby';
 import React from 'react';
-import Heading from '../components/Heading';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Heading from '../components/Heading';
+import ImageLinkContainer from '../components/ImageLinkContainer/';
+import { Link } from 'gatsby';
+
 import ProjectsSVGIcon from '../images/code.svg';
 import GithubSVGIcon from '../images/github.svg';
 
@@ -11,8 +13,6 @@ import LinkedinSVGIcon from '../images/linkedin.svg';
 import AboutMeSVGIcon from '../images/user.svg';
 
 import * as styles from './index.module.scss';
-
-import ImageLinkContainer from '../components/ImageLinkContainer/';
 
 const IndexPage = (props) => (
   <Layout>
@@ -60,7 +60,7 @@ const IndexPage = (props) => (
       <ImageLinkContainer>
         <Link to="/resume/">
           <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
-          <span className={styles.textLink}>About (CV)</span>
+          <span className={styles.textLink}>About (CV, in Dutch)</span>
         </Link>
       </ImageLinkContainer>
 

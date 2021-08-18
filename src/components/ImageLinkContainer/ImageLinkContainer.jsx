@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ImageLinkContainer = ({ children }) => {
   return (
-    <div className="col-100 col-sm-25 d-flex flex-column align-items-center mb-3">
+    <div className="col-100 col-sm-50 col-md-25 d-flex flex-column align-items-center mb-3">
       {children}
     </div>
   );
