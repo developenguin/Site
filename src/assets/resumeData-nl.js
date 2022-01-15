@@ -11,10 +11,16 @@ const data = {
 
   experience: [ {
     title: 'Frontend Developer',
+    place: 'CODEZILLA',
+    startDate: '01-01-2022',
+    endDate: null,
+    description: ''
+  }, {
+    title: 'Frontend Developer',
     place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
-    endDate: null,
-    description: 'Als frontend developer werk ik aan de Medicore producten, zoals ons EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Ook werk ik mee aan de transitie naar een microservice-based ecosysteem, waarbij we gebruik maken van micro-frontends. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
+    endDate: '31-12-2021',
+    description: 'Als frontend developer werkte ik aan de Medicore producten, zoals het EPD, zorgverlenerportaal en patiëntportaal. Deze applicaties maken de zorg makkelijker, efficiënter en beter te begrijpen voor zorgverleners en patiënten. Ook werkte ik mee aan de transitie naar een microservice-based ecosysteem op basis van micro-frontends. Per 1 januari 2021 is Medicore onderdeel van Tenzinger',
     extra: [{
       title: 'Ondernemingsraad Medicore/Tenzinger',
       startDate: '01-07-2017',
