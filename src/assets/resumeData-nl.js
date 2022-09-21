@@ -14,7 +14,13 @@ const data = {
     place: 'CODEZILLA',
     startDate: '01-01-2022',
     endDate: null,
-    description: ''
+    description: 'Voor en met klanten van CODEZILLA bouw ik aan frontend applicaties waarbij kwaliteit, gebruiksvriendelijkheid en toegankelijkheid hoog in het vaandel staan.',
+    extra: [{
+      title: 'SDB Groep',
+      startDate: '01-03-2022',
+      endDate: null,
+      description: 'Voor de SDB Groep werk ik aan de Planning applicatie, waarmee zorginstellingen hun (capaciteits)planning en roostering kunnen vergemakkelijken.'
+    }]
   }, {
     title: 'Frontend Developer',
     place: 'Medicore (Tenzinger)',

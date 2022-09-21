@@ -11,10 +11,22 @@ const data = {
 
   experience: [ {
     title: 'Frontend Developer',
+    place: 'CODEZILLA',
+    startDate: '01-01-2022',
+    endDate: null,
+    description: 'I build frontend applications for and with CODEZILLA\'s clients, focusing on quality, user-friendliness and accessibility.',
+    extra: [{
+      title: 'SDB Groep',
+      startDate: '01-03-2022',
+      endDate: null,
+      description: 'For SDB Groep I\'m working on the Planning application, that care providers can use to automate their (capacity) planning and rostering.'
+    }]
+  }, {
+    title: 'Frontend Developer',
     place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
-    endDate: null,
-    description: 'As a frontend developer I work on the Medicore products, e.g. our care provider portal, electronic patient record and patient portal. These applications aim to make Dutch healthcare easier, more accessible and more efficient for care providers and patients. As of January 1st, 2021, Medicore is part of Tenzinger.',
+    endDate: '31-21-2021',
+    description: 'As a frontend developer I worked on the Medicore products, e.g. the care provider portal, electronic patient record and patient portal. These applications aim to make Dutch healthcare easier, more accessible and more efficient for care providers and patients. As of January 1st, 2021, Medicore is part of Tenzinger.',
     extra: [{
       title: 'Works Council Medicore/Tenzinger',
       startDate: '01-07-2017',
