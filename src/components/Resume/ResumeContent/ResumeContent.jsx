@@ -1,16 +1,18 @@
 import CodeIcon from '@material-ui/icons/Code';
 import LanguageIcon from '@material-ui/icons/Language';
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, {useContext} from 'react';
 import resumeDataEN from '../../../assets/resumeData-en';
 import resumeDataNL from '../../../assets/resumeData-nl';
+import {LanguageContext} from '../../../context/LanguageContext';
 import Heading from '../../Heading';
 import ExperienceItem from '../ExperienceItem';
 import ResumeBlockHeader from '../ResumeBlockHeader/ResumeBlockHeader';
 import SkillBlock from '../SkillBlock';
 import * as styles from './ResumeContent.module.scss';
 
-const ResumeContent = ({ language }) => {
+const ResumeContent = () => {
+
+  const { language } = useContext(LanguageContext);
 
   const resumeData = language === 'nl'
     ? resumeDataNL
@@ -21,13 +23,13 @@ const ResumeContent = ({ language }) => {
       <div className="row">
         <div className="col-100 d-flex justify-content-center">
           <Heading variant="h1">
-            Over mij
+            {language === 'nl' ? 'Over mij' : 'About Me'}
           </Heading>
         </div>
       </div>
       <div className="row">
         <div className="col-100">
-          <ResumeBlockHeader>Ervaring</ResumeBlockHeader>
+          <ResumeBlockHeader>{language === 'nl' ? 'Ervaring' : 'Experience'}</ResumeBlockHeader>
           {resumeData.experience.map(item => (
             <ExperienceItem {...item} key={`exp_${item.place}`}/>
           ))}
@@ -35,7 +37,7 @@ const ResumeContent = ({ language }) => {
       </div>
       <div className="row">
         <div className="col-100">
-          <ResumeBlockHeader>Opleiding</ResumeBlockHeader>
+          <ResumeBlockHeader>{language === 'nl' ? 'Opleiding' : 'Education'}</ResumeBlockHeader>
           {resumeData.education.map(item => (
             <ExperienceItem {...item} key={`edu_${item.place}`}/>
           ))}
@@ -43,7 +45,7 @@ const ResumeContent = ({ language }) => {
       </div>
       <div className="row">
         <div className="col-100">
-          <ResumeBlockHeader>Vaardigheden</ResumeBlockHeader>
+          <ResumeBlockHeader>{language === 'nl' ? 'Vaardigheden' : 'Skills'}</ResumeBlockHeader>
           <div className="row px-1">
             <div className={`col-100 col-sm-50 col-lg-33 ${styles.skillBlockColumn}`}>
               <SkillBlock
@@ -71,14 +73,6 @@ const ResumeContent = ({ language }) => {
       </div>
     </>
   );
-};
-
-ResumeContent.propTypes = {
-  language: PropTypes.oneOf(['nl', 'en'])
-};
-
-ResumeContent.defaultProps = {
-  language: 'nl'
 };
 
 export default ResumeContent;

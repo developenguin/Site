@@ -25,7 +25,7 @@ const data = {
     title: 'Frontend Developer',
     place: 'Medicore (Tenzinger)',
     startDate: '01-06-2016',
-    endDate: '31-21-2021',
+    endDate: '31-12-2021',
     description: 'As a frontend developer I worked on the Medicore products, e.g. the care provider portal, electronic patient record and patient portal. These applications aim to make Dutch healthcare easier, more accessible and more efficient for care providers and patients. As of January 1st, 2021, Medicore is part of Tenzinger.',
     extra: [{
       title: 'Works Council Medicore/Tenzinger',
@@ -75,11 +75,58 @@ const data = {
   } ],
 
   skills: {
-    technical: [ 'Javascript', 'React', 'Backbone', 'Marionette', '(S)CSS' ],
-    languages: [ 'Dutch', 'English' ],
-    work: [ 'Scrum', 'Kanban' ],
-    personal: [ '', 'Driven', 'Reliable' ]
-  }
+    programmingLanguages: {
+      name: 'Programming languages',
+      items: [{
+        name: 'Javascript',
+        rating: 5
+      }, {
+        name: '(S)CSS',
+        rating: 4
+      }, {
+        name: 'HTML',
+        rating: 4
+      }, {
+        name: 'Python',
+        rating: 2
+      }, {
+        name: 'PHP',
+        rating: 2
+      }]
+    },
+    frameworks: {
+      name: 'Frameworks',
+      items: [{
+        name: 'React',
+        rating: 5
+      }, {
+        name: 'Backbone',
+        rating: 5
+      }, {
+        name: 'Marionette',
+        rating: 5
+      }, {
+        name: 'Typescript',
+        rating: 3
+      }, {
+        name: 'Material UI',
+        rating: 3
+      }, {
+        name: 'Symfony',
+        rating: 1
+      }]
+    },
+    languages: {
+      name: 'Languages',
+      items: [{
+        name: 'Dutch',
+        rating: 7
+      }, {
+        name: 'English',
+        rating: 6
+      }]
+    }
+  },
 
 };
 

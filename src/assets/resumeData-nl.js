@@ -104,13 +104,16 @@ const data = {
       name: 'Frameworks',
       items: [{
         name: 'React',
-        rating: 4
+        rating: 5
       }, {
         name: 'Backbone',
         rating: 5
       }, {
         name: 'Marionette',
         rating: 5
+      }, {
+        name: 'Typescript',
+        rating: 3
       }, {
         name: 'Material UI',
         rating: 3
