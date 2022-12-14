@@ -16,15 +16,15 @@ const data = {
     endDate: null,
     description: 'I build frontend applications for and with CODEZILLA\'s clients, focusing on quality, user-friendliness and accessibility.',
     extra: [{
-      title: 'SDB Groep',
-      startDate: '01-03-2022',
-      endDate: '31-10-2022',
-      description: 'For SDB Groep I\'ve worked on the Planning application, that care providers can use to automate their (capacity) planning and rostering.'
-    }, {
       title: 'EPEX spot',
       startDate: '14-11-2022',
       endDate: null,
       description: 'For EPEX Spot I\'m building a new application for traders and market operators on the European power exchange'
+    }, {
+      title: 'SDB Groep',
+      startDate: '01-03-2022',
+      endDate: '31-10-2022',
+      description: 'For SDB Groep I\'ve worked on the Planning application, that care providers can use to automate their (capacity) planning and rostering.'
     }]
   }, {
     title: 'Frontend Developer',
