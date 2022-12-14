@@ -5,7 +5,7 @@ const data = {
     title: 'Msc.',
     jobTitle: 'Frontend Developer',
     summary: '',
-    city: 'Vleuten',
+    city: 'Maarssen',
     linkedinUrl: 'https://linkedin.com/in/mrijken'
   },
 
@@ -20,6 +20,11 @@ const data = {
       startDate: '01-03-2022',
       endDate: null,
       description: 'Voor de SDB Groep werk ik aan de Planning applicatie, waarmee zorginstellingen hun (capaciteits)planning en roostering kunnen vergemakkelijken.'
+    }, {
+      title: 'EPEX Spot',
+      startDate: '14-11-2022',
+      endDate: null,
+      description: 'Voor EPEX Spot bouw ik een nieuwe applicatie voor handelaars en market operators op de Europese energiemarkt.'
     }]
   }, {
     title: 'Frontend Developer',

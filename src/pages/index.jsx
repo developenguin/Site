@@ -59,8 +59,8 @@ const IndexPage = (props) => (
       </ImageLinkContainer>
       <ImageLinkContainer>
         <Link to="/resume/">
-          <AboutMeSVGIcon className="image__user object__link" alt="About (CV)" />
-          <span className={styles.textLink}>About (CV, in Dutch)</span>
+          <AboutMeSVGIcon className="image__user object__link" alt="About/CV" />
+          <span className={styles.textLink}>About/CV</span>
         </Link>
       </ImageLinkContainer>
 
